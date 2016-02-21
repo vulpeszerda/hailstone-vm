@@ -8,3 +8,5 @@ adb connect "localhost:$ADB_PORT"
 adb -s "localhost:$ADB_PORT" shell wm size 480x800
 adb connect "localhost:$ADB_PORT"
 adb -s "localhost:$ADB_PORT" shell wm density 233
+adb connect "localhost:$ADB_PORT"
+adb -s "localhost:$ADB_PORT" shell wm overscan -100,0,0,0

@@ -20,7 +20,7 @@ vboxmanage modifyvm "$VM_NAME" --nic1 nat
 vboxmanage modifyvm "$VM_NAME" --natpf1 adb,tcp,*,"$ADB_PORT",*,5555
 vboxmanage modifyvm "$VM_NAME" --vrdemulticon on
 vboxmanage modifyvm "$VM_NAME" --vrdevideochannel on
-vboxmanage modifyvm "$VM_NAME" --vrdevideochannelquality 75
+vboxmanage modifyvm "$VM_NAME" --vrdevideochannelquality 10
 vboxmanage modifyvm "$VM_NAME" --vrde on
 vboxmanage modifyvm "$VM_NAME" --vrdeport "$PORT"
 vboxmanage modifyvm "$VM_NAME" --vrdeproperty "Security/Method=negotiate"

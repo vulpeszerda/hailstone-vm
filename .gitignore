@@ -44,3 +44,4 @@ bower.json
 # Custom
 /vdi/*
 *.apk
+!/apk/*.apk
