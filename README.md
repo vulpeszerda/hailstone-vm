@@ -15,6 +15,12 @@ VM 관련 셸스크립트 모음
 
 * stopvm.sh <VM 번호> : VRDP 서버 종료
 
+* install-and-run.sh <VM 번호> <apk 경로> <패키지 이름> : APK 파일 설치 후 바로 실행
+
+* create-snapshot.sh <VM 번호> : 스냅샷 생성
+
+* restore-snapshot.sh <VM 번호> : 이전 생성된 스냅샷으로 복원
+
 
 ## /tls
 self-sign된 TLS 인증서, 프라이빗 키까지 포함돼있어서 매우 위험하므로 나중에 삭제해야함
