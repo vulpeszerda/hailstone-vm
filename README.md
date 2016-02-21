@@ -3,23 +3,17 @@
 ## /script
 VM 관련 셸스크립트 모음
 
-* vbox-init.sh
-  VirtualBox 설치 (최초 1회, Ubuntu용)
+* vbox-init.sh : VirtualBox 설치 (최초 1회, Ubuntu용)
 
-* createvm.sh <VM 이름> <포트 번호>
-  VM 생성
+* createvm.sh <VM 번호> : VM 생성
 
-* deletevm.sh <VM 이름>
-  VM 삭제
+* deletevm.sh <VM 번호> : VM 삭제
 
-* showvm.sh <VM 이름>
-  VM 정보
+* showvm.sh <VM 번호> : VM 정보
 
-* startvm.sh <VM 이름>
-  VRDP 서버 시작
+* startvm.sh <VM 번호> : VRDP 서버 시작
 
-* stopvm.sh <VM 이름>
-  VRDP 서버 종료
+* stopvm.sh <VM 번호> : VRDP 서버 종료
 
 
 ## /tls
