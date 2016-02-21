@@ -7,6 +7,6 @@ ADB_PORT="700$VM_NUM"
 adb connect "localhost:$ADB_PORT"
 adb -s "localhost:$ADB_PORT" shell wm size 480x800
 adb connect "localhost:$ADB_PORT"
-adb -s "localhost:$ADB_PORT" shell wm density 233
+adb -s "localhost:$ADB_PORT" shell wm density 160
 adb connect "localhost:$ADB_PORT"
-adb -s "localhost:$ADB_PORT" shell wm overscan -100,0,0,0
+adb -s "localhost:$ADB_PORT" shell wm overscan 0,0,0,0
