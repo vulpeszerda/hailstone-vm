@@ -10,7 +10,7 @@ ADB_PORT="700$VM_NUM"
 rsync -ah --progress "$VDI_ORIGIN" "$VDI_PATH"
 vboxmanage internalcommands sethduuid "$VDI_PATH"
 vboxmanage createvm --name "$VM_NAME" --register
-vboxmanage modifyvm "$VM_NAME" --memory 1024 --acpi on
+vboxmanage modifyvm "$VM_NAME" --memory 256 --acpi on
 vboxmanage modifyvm "$VM_NAME" --ostype linux26_64
 vboxmanage storagectl "$VM_NAME" --name "IDE" --add ide
 vboxmanage storageattach "$VM_NAME" --storagectl "IDE" --port 0 --device 0 --type hdd --medium "$VDI_PATH"
